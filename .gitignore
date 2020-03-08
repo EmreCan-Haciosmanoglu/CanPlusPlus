@@ -1,0 +1,6 @@
+#VS Files
+.vs/
+
+#OutputFiles
+Debug/
+Release/
