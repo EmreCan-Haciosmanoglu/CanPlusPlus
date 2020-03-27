@@ -2,11 +2,49 @@
 #include <cmath>
 
 typedef float (*func)(float x);
+
+namespace canpp
+{
+	template<int R, int C>
+	class mat {
+	public:
+		mat()
+		{
+			for (size_t i = 0; i < R; i++)
+			{
+				for (size_t j = 0; j < C; j++)
+				{
+					m_data[i][j] = 0.0f;
+				}
+			}
+		}
+		mat(std::array<std::array<float, C>, R> data)
+			:m_data(data)
+		{
+		}
+
+		inline int rows() { return R; }
+		inline int columns() { return R; }
+		inline std::array<float, C> row(int r) { return m_data[r]; }
+		inline std::array<float, R> column(int C) 
+		{ 
+			std::array<float, R> result;
+			for (size_t i = 0; i < R; i++)
+			{
+				result[i] = m_data[i][c];
+			}
+			return result;
+		}
+
+	private:
+		std::array<std::array<float, C>, R> m_data;
+	};
+}
 class Matrix
 {
 public:
 	Matrix(int r, int c);
-	Matrix(int r, int c, float *d);
+	Matrix(int r, int c, float* d);
 	Matrix(const Matrix& copy);
 	~Matrix();
 

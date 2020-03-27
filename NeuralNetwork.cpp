@@ -30,7 +30,9 @@ NeuralNetwork::NeuralNetwork(int* nodes, int length, float lr)
 
 NeuralNetwork::NeuralNetwork(Model m)
 {
-	auto it = m.GetLayers();
+	auto it1 = m.GetLayers();
+	auto it2 = m.GetLayers();
+	it2++;
 	for (int i = 0; i < m.GetLayerCount(); i++)
 	{
 	}
