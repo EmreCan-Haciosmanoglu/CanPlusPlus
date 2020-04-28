@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NeuralNetwork", "NeuralNetwork.vcxproj", "{86D44468-6E86-4BAE-8BC7-7E82841C0E70}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\Test\Test.vcxproj", "{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test\Test.vcxproj", "{C9FDA636-9B46-4567-BEFA-368116A65EAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{86D44468-6E86-4BAE-8BC7-7E82841C0E70}.Release|x64.Build.0 = Release|x64
 		{86D44468-6E86-4BAE-8BC7-7E82841C0E70}.Release|x86.ActiveCfg = Release|Win32
 		{86D44468-6E86-4BAE-8BC7-7E82841C0E70}.Release|x86.Build.0 = Release|Win32
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Debug|x64.ActiveCfg = Debug|x64
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Debug|x64.Build.0 = Debug|x64
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Debug|x86.ActiveCfg = Debug|Win32
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Debug|x86.Build.0 = Debug|Win32
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Release|x64.ActiveCfg = Release|x64
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Release|x64.Build.0 = Release|x64
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Release|x86.ActiveCfg = Release|Win32
-		{A02E1B3A-B8A0-4A5D-AC5F-862823AEAB97}.Release|x86.Build.0 = Release|Win32
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Debug|x64.ActiveCfg = Debug|x64
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Debug|x64.Build.0 = Debug|x64
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Debug|x86.Build.0 = Debug|Win32
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Release|x64.ActiveCfg = Release|x64
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Release|x64.Build.0 = Release|x64
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Release|x86.ActiveCfg = Release|Win32
+		{C9FDA636-9B46-4567-BEFA-368116A65EAC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 #pragma once
-#include <cmath>
+#include<array>
+#include<iostream>
 
 typedef float (*func)(float x);
 
@@ -14,30 +15,30 @@ namespace canpp
 			{
 				for (size_t j = 0; j < C; j++)
 				{
-					m_data[i][j] = 0.0f;
+					data[i][j] = 0.0f;
 				}
 			}
 		}
 		mat(std::array<std::array<float, C>, R> data)
-			:m_data(data)
+			:data(data)
 		{
 		}
 
 		inline int rows() { return R; }
 		inline int columns() { return R; }
-		inline std::array<float, C> row(int r) { return m_data[r]; }
+		inline std::array<float, C>& row(int r) { return data[r]; }
 		inline std::array<float, R> column(int C) 
 		{ 
 			std::array<float, R> result;
 			for (size_t i = 0; i < R; i++)
 			{
-				result[i] = m_data[i][c];
+				result[i] = data[i][C];
 			}
 			return result;
 		}
 
-	private:
-		std::array<std::array<float, C>, R> m_data;
+	public:
+		std::array<std::array<float, C>, R> data;
 	};
 }
 class Matrix
